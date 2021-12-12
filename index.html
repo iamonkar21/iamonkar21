@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <script src="js/jquery-3.6.0.min.js"></script>
+ 
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/llll.css">
+    <link rel="stylesheet" href="css/mobileview.css">
+</head>
+<body>
+ <header class="header">
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> HMBiz </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#categaries">categories</a>
+        <a href="#features">Today's special</a>
+        <a href="#product">products</a>
+        <a href="#footer">about</a>  
+    </nav>
+
+
+    <div class="icons">
+        <a href="search.html"><div class="fas fa-search" id="search"></div></a>
+        <a href="cart.html"><div class="fas fa-shopping-cart" id="cart"></div></a>
+        <div class="fas fa-user" onclick="popup('login-popup')" id="login"> </div>
+        <a href="#"><div class="fas fa-bars" id="add"></div></a>
+        <!-- <div class="fas fa-bars" id="menu-btn" onclick="dis('hid')" ></div> -->
+    </div>
+ </header>
+
+
+ <div class="popup-container" id="login-popup">
+    <div class="popup">
+      <form method="POST" action="#">
+        <h2>
+          <span>USER LOGIN</span>
+          <button type="reset" onclick="popup('login-popup')">X</button>
+        </h2>
+        <input type="text" placeholder="E-mail or Username" name="email_username">
+        <input type="password" placeholder="Password" name="password">
+        <i onclick="pop('register-popup')">Already have an account</i><br>
+        <button type="submit" class="login-btn" name="login">LOGIN</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup-container" id="register-popup">
+    <div class="register popup">
+      <form method="POST" action="#">
+        <h2>
+          <span>USER REGISTER</span>
+          <button type="reset" onclick="popup('register-popup')">X</button>
+        </h2>
+        <input type="text" placeholder="Full Name" name="fullname">
+        <input type="text" placeholder="Username" name="username">
+        <input type="email" placeholder="E-mail" name="email">
+        <input type="password" placeholder="Password" name="password">
+        <i onclick="datapop('login-popup')">don't have an account</i><br>
+        <button type="submit" class="register-btn" name="register">REGISTER</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="profile" id="profile">
+    <h3 class="nav01">x</h3>
+    <ul>
+       <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="view.html">Products</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="#"><i class="fas fa-sign-out-alt"></i>logout</a></li>
+      </ul>
+ </div>
+
+
+
+
+
+
+<!-- main -->
+< <div class="slideshow-container">
+
+    <section class="mySlides home" id="home"> <img src="image/X.jpg" alt="">
+    
+        <div class="content">
+            <h3>fresh and <span>organic</span> products for you</h3>
+            <p>The taste that rhymes with your cravings.</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+        
+    </section>
+    <!--  <section class="mySlides home" id="home" style="background: url(/image/X.png);">
+    
+        <div class="content">
+            <h3>fresh and <span>organic</span> products for you</h3>
+            <p>The taste that rhymes with your cravings.</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+        
+    </section>
+    <section class="mySlides home" id="home" style="background: url(/image/bg-1jpg);">
+    
+        <div class="content">
+            <h3>fresh and <span>organic</span> products for you</h3>
+            <p>The taste that rhymes with your cravings.</p>
+            <a href="#" class="btn">shop now</a> 
+        </div>
+        
+    </section> -->
+ </div> 
+
+
+
+
+
+<!-- categaries -->
+<section class="categaries" id="categaries">
+    <div class="head">
+    <h1 class="col-md-9 siz">categaries</h1>
+    </div>
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#"><img src="image/pappad.jpg" alt=""></a>
+                <h3>papad</h3>
+        </div>
+        <div class="box">
+            <a href="#"><img src="image/meal.jpeg" alt=""></a>
+                <h3>Spices</h3>
+        </div>
+        <div class="box">
+            <a href="#"><img src="image/spices.jpg" alt=""></a>
+                <h3>Meal</h3>
+
+        </div>
+        <div class="box">
+            <a href="#"><img src="image/pickle.jpg" alt=""></a>
+                <h3>Pickle</h3>
+
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="image/cake2.png" alt=""></a>
+                <h3>cakes</h3>
+        </div>
+
+        <div class="box">
+            <a href="#" ><img src="image/chocolate.jpg" alt=""></a>
+                <h3>Choclates</h3>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- features -->
+<section class="features" id="features">
+    <div class="head">
+    <h1>Today's special</h1>
+    <h3> <a href="view.html"> view all</a></h3>
+    </div>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/spl.jpg" alt="">
+                <h3>Rice Plate</h3>
+                <div class="price"> &#x20B9 120 </div>
+                <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="image/garlic.jpg" alt="">
+                <h3>Garlic papad</h3>
+                <div class="price"> &#x20B9 69 </div>
+                <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="image/mixmasala.jpeg" alt="">
+                <h3>Mix masala</h3>
+                <div class="price"> &#x20B9 400 per kg </div>
+                <a href="#" class="btn">add to cart</a>
+        </div>
+        <div class="box">
+            <img src="image/redvelvet.jpg" alt="">
+                <h3>Red Velvet Cake</h3>
+                <div class="price"> &#x20B9 349 </div>
+                <a href="#" class="btn">add to cart</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- product -->
+<section class="product" id="product">
+    <div class="head">
+    <h1>Products</h1>
+    <h3> <a href="view.html"> view all</a></h3>
+    </div>
+    <div class="box-container">
+        
+        <div class="box">
+            <a href="product.html"><img src="image/P1.png" alt="">    </a>
+                <h3>Udid Papad</h3>
+                <div class="price"> &#x20B9 36 </div>
+                <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="image/M1.jpg" alt="">
+                <h3>Biryani Masala</h3>
+                <div class="price"> &#x20B9 251 </div>
+                <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="image/M2.jpg" alt="">
+                <h3>Spl. Chai Masala</h3>
+                <div class="price"> &#x20B9 119 </div>
+                <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="image/C1.jpg" alt="">
+                <h3>Chocklate Cake</h3>
+                <div class="price"> &#x20B9 240 </div>
+                <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="image/C2.jpg" alt="">
+                <h3>Black Forest Cake</h3>
+                <div class="price"> &#x20B9 299 </div>
+                <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="image/S1.jpg" alt="">
+                <h3>Gulab Jamun</h3>
+                <div class="price"> &#x20B9 239 </div>
+                <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="image/S2.jpg" alt="">
+                <h3>Chakali</h3>
+                <div class="price"> &#x20B9 120 </div>
+                <a href="#" class="btn">add to cart</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- footer -->
+        
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> HMBiz <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Delectable home- cooked food that makes you go wow.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                
+            </div>
+            <div class="instagram"><a href="#" class="fab fa-instagram"></a></div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +913-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +911-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> HMBiz@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> pune, india - 411004 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Privacy Policy </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Terms & Condition </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Media Covergae </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Blog </a>
+
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> Onkar,Gaurav and Vivek </span> | all rights reserved @2021 </div>
+
+
+</section>
+
+
+<!-- custom js file link  -->
+<script src="js/main.js"></script>
+<script src="js/ff.js"></script>
+<script>
+    // --- Nav |  01  |  Side-Slide
+$('#add').click(function() {
+  console.log("clicked")
+  $('.profile').animate({left: "0px"}, 200);
+});
+
+$('h3.nav01').click(function() {
+  $('.profile').animate({left: "-285px"}, 200);
+});
+</script>
+ 
+</body>
+</html>
+
