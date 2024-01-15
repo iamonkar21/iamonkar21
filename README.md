@@ -1,10 +1,9 @@
-- 👋 Hi, I’m @iamonkar21
-- 👀 I’m interested in Java...
-- 🌱 I’m currently learning Fullstack java developement ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+👋 Hey there! iam.onkar, a Java Full Stack Developer.
 
-<!---
-iamonkar21/iamonkar21 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+💻 Working on web development with a focus on React.js and Spring Boot.
+
+🚀 Passionate about creating seamless user experiences and scalable back-end solutions.
+
+🌐 Always learning and exploring new tech.
+
+📫 Let's connect and code together!
